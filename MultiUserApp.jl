@@ -139,4 +139,3 @@ route("/") do
 end
 
 Genie.config.server_host = "127.0.0.1"
-up(open_browser = true)

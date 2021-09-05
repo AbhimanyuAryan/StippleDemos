@@ -16,7 +16,7 @@ function ui()
             [
                 row(
                     cell([
-                        h1("Knob example")
+                        h1("Events example")
                     ])
                 )
                 row(

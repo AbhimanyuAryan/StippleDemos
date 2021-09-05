@@ -201,4 +201,4 @@ route("/") do
   ui(gc_model) |> html
 end
 
-up(rand((8000:9000)), open_browser=true)
+#up(rand((8000:9000)), open_browser=true)

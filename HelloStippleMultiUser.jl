@@ -41,5 +41,3 @@ route("/") do
 end
 
 route("/dashboards/:session_id", ui)
-
-up(rand((8000:9000)), open_browser=true)

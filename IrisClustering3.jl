@@ -132,7 +132,3 @@ end
 route("/") do
   ui(ic_model) |> html
 end
-
-#= start server =#
-
-up(rand((8000:9000)), open_browser=true)

@@ -22,6 +22,7 @@ This repository includes a collection of Stipple demo application.
 
   ```julia
   pkg> activate .
+  pkg> instantiate
   ```
 
   then exit `pkg> ` mode (via Ctrl+C or backspace until the cursor changes from `pkg> ` to `julia> `)
@@ -29,7 +30,12 @@ This repository includes a collection of Stipple demo application.
 4. Run:
 
 ```julia
-julia> include("IrisClustering.jl") # swap "IrisClustering.jl" with any other demo
+# using includet from Revise to reflect changes in browser on Save 
+julia> includet("IrisClustering.jl") # swap "IrisClustering.jl" with any other demo
+julia> up() # should kick server at default localhost and port
+
+# Using random port between 8000:9000 and open browser
+julia> up(rand((8000:9000)), open_browser=true)
 ```
 
 Upon starting the application, a browser window should automatically open with the demo dashboard.

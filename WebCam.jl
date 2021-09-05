@@ -175,5 +175,3 @@ end
 Genie.config.server_host = "127.0.0.1"
 
 restart()
-
-up(open_browser = true)
